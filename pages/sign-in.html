@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Sign in</title>
+</head>
+
+<body>
+    <!--TOP BAR-->
+    <header>
+        <div class="ag-topbar">
+            <div class="ag-logo">
+                <img src="../images/logo-polvo-2.png" alt="Logo Agenda">
+            </div>
+            <nav class="ag-menu">
+                <a href="../index.html">Home</a>
+                <a href="horario.html">Horário</a>
+                <a href="agenda.html">Agenda</a>
+            </nav>
+            <nav class="ag-menu-user">
+                <a href="#">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--CONTEUDO-->
+    <section class="ag-area-signin">
+        <div class="ag-signin">
+            <div>
+                <img src="../images/logo-polvo-2.png" alt="">
+            </div>
+
+            <form action="POST">
+                <input id="ag-username" type="text" name="nome" placeholder="Username" autofocus>
+                <input type="submit" value="Sign In">
+            </form>
+
+            <p>New to Agenda Matcher? <a href="sign-up.html">Create an account</a></p>
+        </div>
+    </section>
+</body>
+
+</html>

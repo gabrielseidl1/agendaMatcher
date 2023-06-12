@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Horário</title>
+</head>
+
+<body>
+    <!--TOP BAR-->
+    <header>
+        <div class="ag-topbar">
+            <div class="ag-logo">
+                <img src="../images/logo-polvo-2.png" alt="Logo Agenda">
+            </div>
+            <nav class="ag-menu">
+                <a href="../index.html">Home</a>
+                <a href="#">Horário</a>
+                <a href="agenda.html">Agenda</a>
+            </nav>
+            <nav class="ag-menu-user">
+                <a href="sign-in.html">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--CONTEUDO-->
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <div class="ag-conteudo">
+                <h1 class="ag-title ag-title-sm ag-text-blue ag-pad-top-15 ag-text-center">Olá <span
+                        class="ag-text-white">nome</span>,
+                    cadastre seu horário!
+                </h1>
+                <p class="ag-text-center ag-text-white">Entre com as informações abaixo:</p>
+                <div class="ag-pad-top-50 ag-pad-bottom-30">
+                    <form action="">
+                        <fieldset class="ag-fieldset">
+                            <div class="">
+                                <label class="ag-label-datahora ag-text-white" for="ag-data">Informe a data:</label>
+                                <input class="ag-input-datahora" type="date" name="data" id="ag-data" required>
+                            </div>
+                            <div class="">
+                                <label class="ag-label-datahora ag-text-white" for="ag-hora">Informe o horário
+                                    inicial:</label>
+                                <input class="ag-input-datahora" type="time" name="hota" id="ag-hora-inicial" required>
+                            </div>
+                            <div class=""">
+                                    <label class=" ag-label-datahora ag-text-white" for="ag-hora">Informe o horário
+                                final:</label>
+                                <input class="ag-input-datahora" type="time" name="hota" id="ag-hora-final" required>
+                            </div>
+                            <div>
+                                <button onclick="enviar()" class="ag-btn-datahora">Enviar</button>
+                                <!-- <p class="ag-text-white" id="ag-resultado-data">Data: </p>
+                                <p class="ag-text-white" id="ag-resultado-hora">Hora: </p> -->
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Open Sans' sans-serif;
+}
+
+body {
+    background-image: url('../images/fundo3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+    overflow: hidden;
+    /*NAO APARECER A BARRA DE ROLAGEM --- IMPORTANTE---- */
+}
+
+@media screen and (min-width: 320px) {
+
+    /* ------- TOP BAR E MENU ------- */
+    .ag-topbar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #252A34;
+        box-shadow: -2px 2px 2px #5342ee;
+    }
+
+    .ag-logo {
+        width: auto;
+        height: auto;
+        margin-left: 200px;
+    }
+
+    .ag-logo img {
+        width: 65px;
+        height: 65px;
+        display: block;
+    }
+
+    .ag-menu {
+        margin-left: 50px;
+    }
+
+    .ag-menu a {
+        font-family: 'Noto Sans', serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 40px;
+        display: pointer;
+        text-decoration: none;
+        color: #ffffff;
+        position: relative;
+    }
+
+    .ag-menu a:hover {
+        color: #5342ee;
+    }
+
+    .ag-menu-user {
+        margin-left: 1050px;
+    }
+
+    .ag-menu-user a {
+        font-family: 'Noto Sans', serif;
+        font-weight: 500;
+        font-size: 16px;
+        display: pointer;
+        text-decoration: none;
+        color: #fff;
+        margin-right: 40px;
+        border: solid 1px #5342ee;
+        padding: 5px 10px;
+        border-radius: 10px;
+        /* color: #5e94b6; */
+    }
+
+    .ag-menu-user a:hover {
+        background-color: #4f3ef0;
+    }
+
+    /* -------------------------------- */
+    /* ------- CONTEUDO HOME ------- */
+
+    /* .row {
+        margin-right: 15px;
+        margin-left: 15px;
+    } */
+
+    .ag-conteudo {
+        width: 100%;
+        height: auto;
+        margin-top: 140px;
+        background-color: #252A34;
+        /* background-color: #353030; */
+        /* background-color: #292525; */
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: -2px 2px 2px #5342ee;
+    }
+
+    .ag-conteudo p {
+        font-size: 18px;
+        line-height: 28px;
+        padding-top: 15px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    /* -------------------------------- */
+    /* ------- SIGN IN ------- */
+
+    .ag-area-signin {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ag-signin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #252A34;
+        width: 400px;
+        height: 340px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: -2px 2px 2px #5342ee;
+        margin-bottom: 50px;
+    }
+
+    .ag-signin img {
+        width: 80px;
+        height: auto;
+    }
+
+    .ag-signin form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .ag-signin input {
+        color: #5342ee;
+        margin-top: 15px;
+        background-color: #ffffff;
+        border: none;
+        height: 35px;
+        outline: none;
+        border-radius: 7px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .ag-signin input::placeholder {
+        color: #5342ee;
+        font-size: 14px;
+    }
+
+    .ag-signin form [type="submit"] {
+        display: block;
+        background-color: #5342ee;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .ag-signin p {
+        color: #fff;
+        padding-top: 15px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .ag-signin a {
+        color: #5342ee;
+        text-decoration: none;
+        margin-left: 5px;
+
+    }
+
+    /* -------------------------------- */
+    /* ------- SIGN UP ------- */
+    .ag-area-signup {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ag-signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #252A34;
+        width: 400px;
+        height: 340px;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: -2px 2px 2px #5342ee;
+        margin-bottom: 50px;
+    }
+
+    .ag-signup img {
+        width: 80px;
+        height: auto;
+    }
+
+    .ag-signup form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .ag-signup input {
+        color: #5342ee;
+        margin-top: 15px;
+        background-color: #ffffff;
+        border: none;
+        height: 35px;
+        outline: none;
+        border-radius: 7px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .ag-signup input::placeholder {
+        color: #5342ee;
+        font-size: 14px;
+    }
+
+    .ag-signup form [type="submit"] {
+        display: block;
+        background-color: #5342ee;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .ag-signup p {
+        color: #fff;
+        padding-top: 15px;
+        font-size: 14px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .ag-signup a {
+        color: #5342ee;
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+    /* ------- HORARIO ------- */
+
+    .ag-fieldset {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        padding: 25px 45px;
+        border-radius: 8px;
+        border-color: #5342ee;
+    }
+
+    .ag-label-datahora {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;
+    }
+
+    .ag-input-datahora {
+        width: 125px;
+        font-size: 16px;
+        background-color: #fff;
+        color: #5342ee;
+        border-radius: 5px;
+        margin-left: 15px;
+        margin-top: 25px;
+    }
+
+    .ag-btn-datahora {
+        display: block;
+        width: 100px;
+        height: auto;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        background-color: #5342ee;
+        color: #fff;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .ag-btn-datahora:hover {
+        background-color: #fff;
+        color: #5342ee;
+    }
+
+    /* ------- AGENDA ------- */
+    .ag-conteudo-agenda {
+        width: 100%;
+        height: auto;
+        margin-top: 140px;
+        background-color: #252A34;
+        /* background-color: #353030; */
+        /* background-color: #292525; */
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: -2px 2px 2px #5342ee;
+    }
+
+    .ag-container-agenda {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .ag-lista-agenda {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    }
+
+    .ag-lista-infos {
+        background-color: #252A34;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        /* margin-right: 5px; */
+        border: solid 1px #5342ee;
+    }
+
+    .ag-lista-infos h1 {
+        font-size: 16px;
+        font-family: 'Noto Sans', sans-serif;
+        padding-left: 10px;
+        color: #fff;
+    }
+}
+
+/* ----------- CLASSES UTILITÁRIAS ---------- */
+/* -- FONTE -- */
+
+.ag-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* -- TAMANHO FONTE TITULO-- */
+
+.ag-title-lg {
+    font-size: 72px;
+}
+
+.ag-title-md {
+    font-size: 48px;
+}
+
+.ag-title-sm {
+    font-size: 40px;
+}
+
+/* -- TEXT ALIGN- */
+.ag-text-center {
+    text-align: center;
+}
+
+/* -- TEXT COLORS -- */
+
+.ag-text-blue {
+    color: #5342ee;
+}
+
+.ag-text-grey {
+    color: #353030;
+}
+
+.ag-text-black {
+    color: #000;
+}
+
+.ag-text-white {
+    color: #fff;
+}
+
+
+/* -- BACKGROUND COLORS -- */
+
+.ag-background-green {
+    background-color: #8DE969;
+}
+
+.ag-background-grey {
+    background-color: #433A3F;
+}
+
+.ag-background-light {
+    background-color: #bcbcbc;
+}
+
+.ag-background-black {
+    background-color: #000;
+}
+
+/* -- MARGIN -- */
+
+.ag-mar-15 {
+    margin: 15px;
+}
+
+.ag-mar-top-15 {
+    margin-top: 15px;
+}
+
+.ag-mar-top-30 {
+    margin-top: 30px;
+}
+
+.ag-mar-top-60 {
+    margin-top: 60px;
+}
+
+.ag-mar-right-15 {
+    margin-right: 15px;
+}
+
+.ag-mar-right-30 {
+    margin-right: 30px;
+}
+
+.ag-mar-left-10 {
+    margin-left: 10px;
+}
+
+.ag-mar-left-15 {
+    margin-left: 15px;
+}
+
+.ag-mar-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.ag-mar-bottom-30 {
+    margin-bottom: 30px
+}
+
+.ag-mar-bottom-50 {
+    margin-bottom: 50px
+}
+
+/* -- PADDING -- */
+
+.ag-pad-0 {
+    padding: 0;
+}
+
+.ag-pad-15 {
+    padding: 15px;
+}
+
+.ag-pad-30 {
+    padding: 30px;
+}
+
+.ag-pad-top-15 {
+    padding-top: 15px;
+}
+
+.ag-pad-top-30 {
+    padding-top: 30px;
+}
+
+.ag-pad-top-50 {
+    padding-top: 50px;
+}
+
+.ag-pad-right-15 {
+    padding-right: 15px;
+}
+
+.ag-pad-right-30 {
+    padding-right: 30px;
+}
+
+.ag-pad-left-15 {
+    padding-left: 15px;
+}
+
+.ag-pad-left-30 {
+    padding-left: 30px;
+}
+
+.ag-pad-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.ag-pad-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.ag-pad-bottom-30 {
+    padding-bottom: 30px;
+}
+
+/* -- BOTTONS -- */
+
+
+
+/* -- COLORS -- */
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.white {
+    background-color: #fff;
+}
