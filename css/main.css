@@ -45,7 +45,7 @@ body {
     .ag-logo {
         width: auto;
         height: auto;
-        margin-left: 200px;
+        margin-left: 100px;
     }
 
     .ag-logo img {
@@ -67,16 +67,17 @@ body {
         margin-right: 40px;
         cursor: pointer;
         text-decoration: none;
-        color: #ffffff;
+        color: #5342ee;
         position: relative;
     }
 
     .ag-menu a:hover {
-        color: #5342ee;
+        color: #fff;
     }
 
     .ag-menu-user {
         justify-self: flex-end;
+        padding-right: 100px;
     }
 
     .ag-menu-user a {
@@ -108,7 +109,7 @@ body {
     .ag-conteudo {
         width: 100%;
         height: auto;
-        margin-top: 140px;
+        margin-top: 100px;
         background-color: #252A34;
         /* background-color: #353030; */
         /* background-color: #292525; */
@@ -325,11 +326,11 @@ body {
     .ag-conteudo-agenda {
         width: 100%;
         height: auto;
-        margin-top: 140px;
+        margin-top: 100px;
         background-color: #252A34;
         /* background-color: #353030; */
         /* background-color: #292525; */
-        padding: 25px;
+        padding: 40px;
         border-radius: 20px;
         box-shadow: -2px 2px 2px #5342ee;
     }
@@ -339,7 +340,6 @@ body {
         height: auto;
         display: flex;
         flex-direction: column;
-        padding: 30px;
     }
 
     .ag-lista-agenda {
@@ -379,15 +379,15 @@ body {
 /* -- TAMANHO FONTE TITULO-- */
 
 .ag-title-lg {
-    font-size: 72px;
+    font-size: 52px;
 }
 
 .ag-title-md {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .ag-title-sm {
-    font-size: 40px;
+    font-size: 36px;
 }
 
 /* -- TEXT ALIGN- */
@@ -559,4 +559,10 @@ body {
 
 .white {
     background-color: #fff;
+}
+
+.div-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
