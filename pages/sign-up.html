@@ -19,14 +19,16 @@
     <!--TOP BAR-->
     <header>
         <div class="ag-topbar">
-            <div class="ag-logo">
-                <img src="../images/logo-polvo-2.png" alt="Logo Agenda">
+            <div class="ag-logo-menu">
+                <div class="ag-logo">
+                    <img src="../images/logo-polvo-2.png" alt="Logo Agenda">
+                </div>
+                <nav class="ag-menu">
+                    <a href="../index.html">Home</a>
+                    <a href="horario.html">Horário</a>
+                    <a href="agenda.html">Agenda</a>
+                </nav>
             </div>
-            <nav class="ag-menu">
-                <a href="../index.html">Home</a>
-                <a href="horario.html">Horário</a>
-                <a href="agenda.html">Agenda</a>
-            </nav>
             <nav class="ag-menu-user">
                 <a href="sign-in.html">Sign In</a>
             </nav>
@@ -41,13 +43,18 @@
             </div>
 
             <form action="POST">
-                <input id="ag-username" type="text" name="nome" placeholder="Create your username" autofocus>
+                <input id="ag-username" type="text" name="name" placeholder="Create your username" autofocus>
                 <input type="submit" value="Sign Up">
             </form>
 
             <p>Already have an account? <a href="sign-in.html">Login here</a></p>
         </div>
     </section>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/service-worker-register.js"></script>
+    <script src="../js/app.js"></script>
+
 </body>
 
 </html>

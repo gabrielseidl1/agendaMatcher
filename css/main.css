@@ -19,7 +19,7 @@ body {
 
 
 
-    overflow: hidden;
+
     /*NAO APARECER A BARRA DE ROLAGEM --- IMPORTANTE---- */
 }
 
@@ -34,6 +34,12 @@ body {
         align-items: center;
         background-color: #252A34;
         box-shadow: -2px 2px 2px #5342ee;
+        justify-content: space-between;
+    }
+
+    .ag-logo-menu {
+        display: flex;
+        align-items: center;
     }
 
     .ag-logo {
@@ -50,6 +56,8 @@ body {
 
     .ag-menu {
         margin-left: 50px;
+        display: flex;
+        flex-direction: row;
     }
 
     .ag-menu a {
@@ -57,7 +65,7 @@ body {
         font-weight: 700;
         font-size: 18px;
         margin-right: 40px;
-        display: pointer;
+        cursor: pointer;
         text-decoration: none;
         color: #ffffff;
         position: relative;
@@ -68,14 +76,14 @@ body {
     }
 
     .ag-menu-user {
-        margin-left: 1050px;
+        justify-self: flex-end;
     }
 
     .ag-menu-user a {
         font-family: 'Noto Sans', serif;
         font-weight: 500;
         font-size: 16px;
-        display: pointer;
+        cursor: pointer;
         text-decoration: none;
         color: #fff;
         margin-right: 40px;
@@ -121,7 +129,7 @@ body {
 
     .ag-area-signin {
         display: flex;
-        height: 100vh;
+        height: calc(100vh - 80px);
         justify-content: center;
         align-items: center;
     }
@@ -196,7 +204,7 @@ body {
     /* ------- SIGN UP ------- */
     .ag-area-signup {
         display: flex;
-        height: 100vh;
+        height: calc(100vh - 80px);
         justify-content: center;
         align-items: center;
     }
